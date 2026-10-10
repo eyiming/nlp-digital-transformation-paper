@@ -1,5 +1,7 @@
 # 基于上市公司年报文本的数字化转型程度测度研究
 
+**仓库地址**：https://github.com/eyiming/nlp-digital-transformation-paper
+
 ## 项目简介
 
 本项目是「预演毕业论文」的完整可复现仓库，研究主题为**基于上市公司年报文本的数字化转型程度测度**。研究采用自然语言处理（NLP）方法，以沪深 A 股上市公司年报文本为分析对象，构建企业数字化转型程度综合测度指标，并通过描述性统计、信效度检验与回归分析验证测度的有效性。
@@ -27,8 +29,13 @@
 │   ├── regression_rd.csv
 │   └── regression_tfp.csv
 ├── paper/                     # 论文正文
-│   └── paper.md               # Markdown 版论文（≥6000 字）
-├── figures/                   # 可视化图表（运行后生成）
+│   ├── paper.md               # Markdown 版论文（约 8400 字）
+│   └── 基于上市公司年报文本的数字化转型程度测度研究.docx  # Word 版论文（含封面、目录、参考文献）
+├── figures/                   # 可视化图表
+│   ├── dti_trend.png          # DTI 年度趋势
+│   ├── dti_industry_box.png   # DTI 行业分布
+│   └── correlation_heatmap.png # 相关系数热力图
+├── scripts/06_visualization.py # 第六步：可视化
 ├── requirements.txt           # Python 依赖
 └── README.md                  # 本文件
 ```
@@ -42,6 +49,7 @@
 | 3 | `03_measure_construction.py` | 基于关键词词典构建词频测度、TF-IDF 测度与综合指数 DTI |
 | 4 | `04_reliability_validity.py` | 描述性统计、相关性分析、Cronbach's Alpha、KMO、Bartlett、PCA |
 | 5 | `05_regression_analysis.py` | 检验 DTI 对未来研发投入强度与全要素生产率的影响 |
+| 6 | `06_visualization.py` | 生成年度趋势、行业分布与相关系数热力图（输出至 `figures/`） |
 
 ## 环境配置与运行方式
 
